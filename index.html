@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espresso Martini</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body id="theme-body" class="light">
+    <div id="theme-overlay"></div> <!-- Capa para transición suave -->
+
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href="#theme-body">
+                        <img src="/img/letra-light.JPG" alt="logo">
+                    </a>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="/pages/menu.html" class="nav-item" data-page="menu">Menu</a></li>
+                    <li><a href="/pages/contacto.html" class="nav-item" data-page="contacto">Contact Us</a></li>
+                    <button class="toggle-theme" aria-label="Toggle theme">🌙</button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="image-container">
+        <img src="/img/logo-light.JPG" class="image-light" alt="Imagen de tema claro">
+        <img src="/img/logo-dark.JPG" class="image-dark hidden" alt="Imagen de tema oscuro">
+    </div>
+
+    <main id="content">
+        <section id="day-content" class="content-day">
+            <div class="hero">
+                <p class="header-p">¡Buenos días! Bienvenido a Espresso Martini.</p>
+                <div class="wrapper">
+                    <div class="scroll-down">
+                        <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="night-content" class="content-night">
+            <div class="hero">
+                <p class="header-p">¡Buenas noches! Es hora de disfrutar de un Martini.</p>
+                <div class="scroll-down">
+                    <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+                </div>  
+            </div>
+        </section>
+
+    </main>
+
+    <!--                              ABOUT US                          -->
+
+    <section id="about" class="about-us">
+        <div class="about-wrapp">
+            <div class="about-container">
+                <h2>About Us</h2>
+                <p class="about-description">
+                    <em>Concepto de "Espresso Martini Bar" ☕🍸</em><br>
+                    Un Espresso Martini Bar es un concepto innovador que fusiona lo mejor de dos mundos: la cultura del café y el arte de la coctelería. Se trata de un espacio versátil que evoluciona a lo largo del día, ofreciendo una experiencia completa para quienes buscan un lugar donde relajarse, trabajar, socializar y disfrutar de bebidas cuidadosamente elaboradas.
+                </p>
+                
+                <div class="about-details">
+                    <div class="about-item">
+                        <h3>🌞 De Día: Café de Especialidad y Brunch</h3>
+                        <p>
+                            Por la mañana y la tarde, el espacio funciona como una cafetería sofisticada, con un enfoque en cafés de especialidad, métodos artesanales de preparación (como V60, Chemex y espresso) y un menú de brunch con opciones creativas y saludables. Es el lugar ideal para profesionales, estudiantes y amantes del café que buscan un ambiente acogedor y estético.
+                        </p>
+                    </div>
+                    
+                    <div class="about-item">
+                        <h3>🌙De Noche: Coctelería Premium y Experiencia Social</h3>
+                        <p>
+                            Cuando cae el sol, la cafetería se transforma en un bar elegante y vibrante, donde el café sigue siendo protagonista, pero en forma de cócteles. La especialidad de la casa es el Espresso Martini, acompañado de una carta de tragos sofisticados que incorporan café y otros ingredientes innovadores. Además, se ofrece una selección de tapas gourmet y música ambiental que crea el mood perfecto para disfrutar la noche.
+                        </p>
+                    </div>
+        
+                    <div class="about-item">
+                        <h3>🔹 Características Clave del Concepto</h3>
+                        <ul>
+                            <li><em>Dualidad Día-Noche:</em>em> Un espacio con dos personalidades: tranquilo y productivo de día, vibrante y social de noche.</li>
+                            <li><em>Enfoque en Café y Coctelería:</em> Bebidas artesanales preparadas con ingredientes de alta calidad.</li>
+                            <li><em>Diseño Moderno y Acogedor:</em> Una atmósfera elegante con iluminación tenue y mobiliario cómodo.</li>
+                            </ul>
+                        
+                      
+                </div>
+                    <div class="about-item">
+                        <h3>     Nuestra Misión ✨</h3>
+                        <p>
+                            En <strong>Espresso Martini Bar</strong> nuestra misión es ofrecer una experiencia única e inolvidable, fusionando la cultura del café con la coctelería de alta gama. Nos esforzamos por crear un ambiente relajante, inspirador y social donde nuestros clientes puedan disfrutar de bebidas innovadoras y deliciosas, en cualquier momento del día o la noche.
+                        </p>
+                      
+                </div>
+                
+                </div>
+
+              
+                   
+             
+            </div>
+    
+        
+                <p class="closing-note">
+                    🔸 <strong>Espresso Martini Bar</strong>: El lugar donde el café y la noche se encuentran.
+                </p>
+            </div>
+    
+           
+        </div>
+    </section>
+    
+    <section id="location" class="location-container">
+        <h2>📍 Ubicación</h2>
+        <div id="map"></div>
+    </section>
+
+    
+
+
+    <!--    FOOTER    -->
+    <footer class="site-footer">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h6>Enlaces útiles</h6>
+            <ul class="footer-links">
+              <li><a href="#">Sobre nosotros</a></li>
+              <li><a href="/pages/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">   
+            <h6>Redes sociales</h6>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/espressomartinidr/" class="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.instagram.com/eduardo.lluis/" class="eduardo" target="_blank">E</a>
+              <a href="https://www.instagram.com/erickmdina/" class="javier" target="_blank">J</a>
+            </div>
+          </div>
+      
+          <div class="footer-column">
+            <h6>Contacto</h6>
+            <p>Dirección: Calle El Conde, Zona colonial, Santo domingo</p>
+            <p>Email: contacto@espressomartini.com</p>
+            <p>Teléfono: +1 (849-523-4469)</p>
+          </div>
+        </div>
+      
+        <hr>
+      
+        <div class="copyright-text">
+          <p>&copy; 2025 Espresso Martini. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+      
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
